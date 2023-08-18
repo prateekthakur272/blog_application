@@ -1,0 +1,19 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet", href="{% static 'style.css' %}">
+    <meta charset="UTF-8">
+    <title>Prateek Thakur</title>
+</head>
+<body>
+    <div class="header">
+        <h2>Prateek Thakur</h2>
+    </div>
+    <div class="card">
+          <h2>{{ selected_post.title }}</h2>
+          <h5>Posted on, {{ selected_post.created_at }}</h5>
+          <p>{{ selected_post.body }}</p>
+    </div>
+</body>
+</html>
